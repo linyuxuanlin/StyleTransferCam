@@ -161,7 +161,7 @@ def compute_loss_and_grads(combination_image, base_image, style_reference_image)
     return loss, grads
 
 # 重复执行批量梯度下降步骤，以最大程度地减少损失，并每100次迭代保存生成的图像。
-每100步将学习率降低0.96。
+# 每100步将学习率降低0.96。
 
 optimizer = keras.optimizers.SGD(
     keras.optimizers.schedules.ExponentialDecay(
