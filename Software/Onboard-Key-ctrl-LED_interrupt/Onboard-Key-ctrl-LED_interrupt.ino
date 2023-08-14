@@ -15,6 +15,7 @@ void loop() {
     digitalWrite(ONBOARD_LED, HIGH);
     delay(500);
     digitalWrite(ONBOARD_LED, LOW);
+    Serial.println("buttonPressed");
     buttonPressed = false;  // 重置中断标志位
   }
 }
